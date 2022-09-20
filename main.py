@@ -1,3 +1,11 @@
+'''
+@File       : main.py
+@Time       : 2022/9/19 11:15 PM EST
+@Author     : JCrouser edited by Priscilla Trejo
+@Desc       : A python file that intakes the data from the computer.py and oo_resale_shop.py files and outputs inventory data.
+
+'''
+
 # Import a few useful containers from the typing module
 from calendar import c
 from typing import Dict, Union
@@ -14,21 +22,6 @@ from oo_resale_shop import ResaleShop
     explicit data types (str, int, etc.) listed in a python function. We're 
     going to go the extra step, because when we get to Java it'll be required!
 """
-#def create_computer(description: str,
- #                   processor_type: str,
- #                   hard_drive_capacity: int,
- #                   memory: int,
- #                   operating_system: str,
- #                   year_made: int,
- #                   price: int):
- #   return {'description': description,
- #           'processor_type': processor_type,
- #           'hard_drive_capacity': hard_drive_capacity,
- #           'memory': memory,
- #           'operating_system': operating_system,
- #           'year_made': year_made,
- #           'price': price
- #   }
 
 def main():
     
@@ -40,10 +33,7 @@ def main():
         "macOS Big Sur", 2013, 1500
     )
 
-    # Print a little banner
-    #print("-" * 21)
-    #print("COMPUTER RESALE STORE")
-    #print("-" * 21)
+
 
     # Add it to the resale store's inventory
     print("Buying", OO_computer["description"])

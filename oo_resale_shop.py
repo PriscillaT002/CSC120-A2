@@ -1,8 +1,17 @@
+'''
+@File       : oo_resale_shop.py
+@Time       : 2022/9/19 11:15 PM EST
+@Author     : JCrouser edited by Priscilla Trejo
+@Desc       : A python file that creates our resaleshop class for our inventory data. In this file I have included the oo sewuenced data for the resaleshop class, buy, sell, and print inventory methods.
+
+
+'''
+
 from computer import Computer
 from typing import Dict, Union, Optional
 
 
-
+  # This is the main Resaleshop class
 class ResaleShop():
 
     ItemID = 0
@@ -12,8 +21,8 @@ class ResaleShop():
         self.inventory: Dict[int, Computer] = inventory
         self.ItemID = ItemID
 
-        
 
+   # buy method 
     def buy(self, computer) -> int:
         # global itemID
         # global inventory
@@ -23,8 +32,7 @@ class ResaleShop():
 
        
 
-    #method sell
-
+    # sell method
     def sell(inventory, item_id: int ):
      if item_id in inventory:
         del inventory[item_id]
@@ -34,8 +42,7 @@ class ResaleShop():
 
    
 
-    #method inventory
-
+    # inventory method
     def print_inventory(inventory):
     # If the inventory is not empty
      if inventory:

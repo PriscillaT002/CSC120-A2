@@ -1,11 +1,21 @@
+'''
+@File       : computer.py
+@Time       : 2022/9/19 11:15 PM EST
+@Author     : JCrouser edited by Priscilla Trejo
+@Desc       : A python file that creates our computer class for our resale shop inventory data. In this file I have included the oo sequenced data for the computer class, refurbish, update price, and create computer methods.
+
+'''
+
 from typing import Dict, Union, Optional
 
+# Computer class
 class Computer:
     
-    #Method
+
     def __init__(self, description : str ,processor_type: int, hard_drive_capacity: int, memory: int, operating_system: str, year_made: int, price: float) -> None:
     
-    #attributes
+
+    # attributes
         self.description = description
         self.processor_type = processor_type
         self.hard_drive_capacity = hard_drive_capacity
@@ -14,8 +24,8 @@ class Computer:
         self.year_made = year_made
         self.price = price
 
-    #method refurbish
 
+    # refurbish method
     def refurbish(inventory, item_id: int, new_os: Optional[str] = None):
      if item_id in inventory:
         computer = inventory[item_id] # locate the computer
@@ -33,14 +43,16 @@ class Computer:
      else:
         print("Item", item_id, "not found. Please select another item to refurbish.")
 
-    #method update price
+
+    # update price method
     def update_price(inventory, item_id: int, new_price: int):
      if item_id in inventory:
         inventory[item_id]["price"] = new_price
      else:
         print("Item", item_id, "not found. Cannot update price.")
 
-    #method new computer
+
+    # new computer method 
     def create_computer(description: str,
                     processor_type: str,
                     hard_drive_capacity: int,
