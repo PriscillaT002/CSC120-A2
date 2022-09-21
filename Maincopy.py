@@ -62,7 +62,7 @@ def main():
     new_OS = "MacOS Monterey"
     print("Refurbishing Item ID:", computer_id, ", updating OS to", new_OS)
     print("Updating inventory...")
-    ResaleShop.refurbish(computer_id, new_OS)
+    Computer.refurbish(computer_id, new_OS)
     print("Done.\n")
 
     # Make sure it worked by checking inventory
