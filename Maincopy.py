@@ -1,3 +1,12 @@
+'''
+@File       : Maincopy.py
+@Time       : 2022/9/19 11:15 PM EST
+@Author     : JCrouser edited by Priscilla Trejo
+@Desc       : A python file that uses our computer.py file and our oo_resale_shop.py file to output our inventory data for our Resaleshop.
+
+'''
+
+
 #original main.py file uploaded with assignment 2 by JCrouser
 
 
