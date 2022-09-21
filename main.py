@@ -26,20 +26,17 @@ from oo_resale_shop import ResaleShop
 def main():
     
     # First, let's make a computer
-    OO_computer = Computer.create_computer(
+    computer = Computer.create_computer(
         "Mac Pro (Late 2013)",
         "3.5 GHc 6-Core Intel Xeon E5",
         1024, 64,
-        "macOS Big Sur", 2013, 1500
-    )
-
+        "macOS Big Sur", 2013, 1500)
 
 
     # Add it to the resale store's inventory
-    print("Buying", OO_computer["description"])
+    print("Buying", computer["description"])
     print("Adding to inventory...")
-    # theShop = ResaleShop()
-    computer_id = ResaleShop.buy(OO_computer)
+    computer_id = ResaleShop.buy(computer)
     print("Done.\n")
 
     # Make sure it worked by checking inventory

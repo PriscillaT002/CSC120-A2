@@ -23,12 +23,12 @@ class ResaleShop():
 
 
    # buy method 
-    def buy(self, computer) -> int:
-        # global itemID
+    def buy(self, computer: Dict[str, Union[str,int,bool]]) -> list:
+        global itemID
         # global inventory
-        self.ItemID =+1
-        self.inventory[self.ItemID] = computer
-        return self.ItemID
+        ItemID =+1
+        self.inventory[ItemID] = computer
+        return ItemID
 
        
 
